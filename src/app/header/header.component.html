@@ -1,13 +1,13 @@
 <header>
-    <nav>
+  <nav>
+    <div class="menu" #menu>
       <div class="logo">Logo</div>
-      <div class="menu-toggle" #menuToggle>
-        <div class="hamburger"></div>
+      <a routerLink="/home">Startsidan</a>
+      <a routerLink="/about">Om sidan</a>
+      <a routerLink="/converterPage">Konverterare</a>
       </div>
-      <ul class="menu" #menu>
-        <li><a routerLink="/home">Startsidan</a></li>
-        <li><a routerLink="/about">Om sidan</a></li>
-        <li><a routerLink="/converterPage">Konverterare</a></li>
-      </ul>
-    </nav>
-  </header>  
+  </nav>
+  <div class="menu-toggle" #menuToggle>
+    <div class="hamburger"></div>
+  </div>
+</header>

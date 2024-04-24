@@ -3,6 +3,19 @@
     display: flex;
 }
 
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0 10px;
+}
+
 /* Stilar för hamburgermenyn */
 .menu-toggle {
     display: none;
