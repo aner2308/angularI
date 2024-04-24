@@ -1,9 +1,13 @@
 <header>
     <nav>
-        <ul>
-          <li><a routerLink="/home">Startsidan</a></li>
-          <li><a routerLink="/about">Om sidan</a></li>
-          <li><a routerLink="/converterPage">Konverterare</a></li>
-        </ul>
-      </nav>
-</header>
+      <div class="logo">Logo</div>
+      <div class="menu-toggle" #menuToggle>
+        <div class="hamburger"></div>
+      </div>
+      <ul class="menu" #menu>
+        <li><a routerLink="/home">Startsidan</a></li>
+        <li><a routerLink="/about">Om sidan</a></li>
+        <li><a routerLink="/converterPage">Konverterare</a></li>
+      </ul>
+    </nav>
+  </header>  
