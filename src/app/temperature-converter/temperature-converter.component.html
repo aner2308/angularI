@@ -1,1 +1,14 @@
-<p>temperature-converter works!</p>
+<div>
+    <h2>Temperaturkonverterare</h2>
+    <label for="temperatureInput">Temperatur:</label>
+    <input type="number" id="temperatureInput" [(ngModel)]="inputValue">
+    <select [(ngModel)]="conversionDirection">
+        <option value="celsiusToFahrenheit">Celsius titt Fahrenheit</option>
+        <option value="fahrenheitToCelsius">Fahrenheit till Celsius</option>
+    </select>
+    <button (click)="convert()">Konvertera</button>
+    <br>
+    <div id="result">
+        <p><strong>Resultat: </strong> {{result}}</p>
+    </div>
+</div>
