@@ -11,6 +11,7 @@ import { TemperatureConverterComponent } from '../temperature-converter/temperat
 })
 export class ConverterPageComponent {
 
+  //Uträkningar för temperaturer 
   convertTemp(): void {
     const tempConverterEl: HTMLElement | null = document.getElementById("tempConverter");
     const lengthConverterEl: HTMLElement | null = document.getElementById("lengthConverter");
@@ -23,6 +24,7 @@ export class ConverterPageComponent {
     }
   }
 
+  //Uträkningar för längder 
   convertLength(): void {
     const tempConverterEl: HTMLElement | null = document.getElementById("tempConverter");
     const lengthConverterEl: HTMLElement | null = document.getElementById("lengthConverter");

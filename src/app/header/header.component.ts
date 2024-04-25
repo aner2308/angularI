@@ -9,14 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  @ViewChild('menuToggle') menuToggle!: ElementRef;
-  @ViewChild('menu') menu!: ElementRef;
-  menuOpen: boolean = false;
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-    if (this.menuToggle) {
-      this.menuToggle.nativeElement.classList.toggle('active');
-    }
-  }
 }
