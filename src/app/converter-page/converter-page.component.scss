@@ -1,13 +1,20 @@
 #convertContainer {
-    width: 80vw;
+    width: 90vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 600px;
     margin: auto;
+    margin-bottom: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
 
     
     h2 {
-        font-size: 2em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.4em;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(65, 65, 65);
+        font-weight: 300;
+        margin: 20px auto;
     }
 
     button {
@@ -15,7 +22,7 @@
         font-size: 1.4em;
         height: 3em;
         width: 7em;
-        background-color: #4259a3;
+        background-color: #565656;
         color: white;
         border-top-left-radius: 0.5em;
         border-top-right-radius: 0.5em;
@@ -23,7 +30,7 @@
 
     button:hover {
         cursor: pointer;
-        background-color: #4259a3db;
+        background-color: rgba(83, 83, 83, 0.859);
         color: white;
     }
 
@@ -31,6 +38,10 @@
         box-shadow: inset 0 0 5px rgb(78, 78, 78);
         background-color: rgb(255, 255, 255);
         color: #4259a3;
+    }
+
+    #buttonMargin {
+        margin-left: 5%;
     }
 
 }

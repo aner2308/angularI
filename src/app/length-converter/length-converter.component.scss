@@ -1,5 +1,5 @@
 #lengthContainer {
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin: auto;
     border-top-right-radius: 30px;
@@ -44,14 +44,14 @@
         font-size: 1.4em;
         height: 2em;
         width: 7em;
-        background-color: #4259a3;
+        background-color: #565656;
         color: white;
         border-radius: 0.5em;
     }
 
     button:hover {
         cursor: pointer;
-        background-color: #4259a3db;
+        background-color: #838383;
         color: white;
     }
 

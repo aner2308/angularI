@@ -1,7 +1,6 @@
 
 header {
     height: 100px;
-    background-color: rgb(216, 234, 255);
 }
 
 nav {
@@ -15,7 +14,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: #4259a3;
+        color: #565656;
         font-weight: 700;
 
         span {
@@ -40,7 +39,7 @@ nav {
         width: 7em;
         height: 1em;
         padding: 10px 0px;
-        background-color: #4259a3;
+        background-color: #565656;
         border-radius: 0.3em;
         margin: 5px;
         color: white;
@@ -69,7 +68,7 @@ nav {
             width: 6.5em;
             height: 1em;
             padding: 10px 0px;
-            background-color: #4259a3;
+            background-color: #565656;
             border-radius: 0.3em;
             margin: 5px;
             color: white;
@@ -95,18 +94,6 @@ nav {
 
     .logo {
         float: none;
-        font-size: 2.4rem;
-        transition: .2s;
-
-        a {
-            text-decoration: none;
-            color: #4259a3;
-            font-weight: 700;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 
     .menu {
@@ -120,14 +107,15 @@ nav {
             width: 100%;
             height: 1em;
             padding: 10px 0px;
-            background-color: #4259a3;
+            background-color: #565656;
             border-radius: 0.3em;
-            margin: 5px;
+            margin: auto;
+            margin-bottom: 10px;
             color: white;
             transition: .2s;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
         }
     }
