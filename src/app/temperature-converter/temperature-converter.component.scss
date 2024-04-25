@@ -15,22 +15,25 @@
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2.4em;
         font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.1em;
     }
 
     select {
         border: none;
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
     label {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
     input {
         height: 1.6em;
-        font-size: 1.2em;
+        width: 30%;
+        font-size: 1.6em;
         border-radius: 5px;
         border: none;
         margin-left: 5px;
@@ -60,5 +63,7 @@
         color: #4259a3;
     }
 
-
+    #result {
+        font-size: 1.6em;
+    }
 }

@@ -1,1 +1,36 @@
 <h2>Om uppgiften</h2>
+
+<div id="aboutContainer">
+    <h3>Inledning</h3>
+    <p>Denna uppgift gick ut på att bekanta sig med Angular, ett ramverk som använts för att bygga denna
+        webbapplikation. För att lösa uppgiften utgick jag ifrån teorihänvisningarna på miun.se, och föreläsningarna som vår kurslärare
+        Mattias Dahlgren hållit för oss. Det var en del nya tillvägagångssätt jämtemot hur vi tidigare byggt våra
+        webbsidor. Men ramverket kändes logiskt och väldigt hjälpsamt. Det som tog lite tid var att hitta vilka
+        kommandon som skulle användas vart. Eempelvis för att få länkarna i navigeringsmenyn att fungera som planerat.
+    </p>
+    <h3>Installation</h3>
+    <p>
+        Jag började med att installera Angular på min dator med hjälp av nodeJS. Detta gjordes med kommandot <strong>npm
+            install -g "&#64;"angular/cli.</strong> Då paketet installeras på en global nivå så räcker det att göra det
+        en gång, även om man skapar många projekt. Därefter skapade jag ett nytt projekt med kommandot <strong>ng new
+            "projektnamn".</strong> Efter projektet var skapat öppnade jag upp det i VSC för att börja skapa min
+        struktur.
+    </p>
+    <h3>Strukturen</h3>
+    <p>I mitt projekt har jag skapat många olika components. Det första var mina tre undersidor <strong>"startsidan",
+            "om- sidan" och "konverteringssidan".</strong> För att kunna bläddra mellan dessa tre sidor var jag tvungen
+        att skapa routings i min <strong>app.routes.ts</strong>-fil. Det var nytt för mig men med bra teoriläsning på
+        miun.se så gick det bra. När routings var gjorda satte jag mig in i konverterarna.</p>
+    <h3>Konvertering</h3>
+    <p>Jag gjorde två separata components för att kunna konvertera mina värden. En component för temperatur, och en
+        component för längd. Dessa två lades in i HTML-koden på min <strong>konverteringssida.</strong> För att få dom
+        att läsas in var jag också tvungen att lägga dom i import-fältet på konverteringssidans .ts-fil. Fuktionerna för
+        konverteringen gjordes med ganska enkel JS-kod. Det som var bra nu var ändå att med hjälp av angulars inbyggda
+        funktion FormsModule kunde jag direkt hämta inputs och skriva ut resultat i min HTML-kod, utan att behöva skapa
+        jobbig DOM-manipulation. Ett stort plus i min bok! Jag skapade också två knappar som bläddrar mellan de två
+        olika konverterarna, så man bara har en framme på skärmen.</p>
+    <h3>Publicering</h3>
+    <p>Jag skapade ett GitHub-repo som jag sedan länkade till mitt Netlify-konto för publicering. Detta gjordes som i
+        tidigare moment, men med skillnaden att vid publicering körs kommandot <strong>ng build.</strong> Det är
+        kommandot för att optimera och komprimera projektfilerna för publicering i angular.</p>
+</div>
