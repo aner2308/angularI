@@ -1,4 +1,11 @@
-<h2>Sida för konvertering</h2>
-
-<app-temperature-converter />
-<app-length-converter />
+<div id="convertContainer">
+    <h2>Sida för konvertering</h2>
+    <button (click)="convertTemp()">Konvertera Temperatur</button>
+    <button (click)="convertLength()">Konvertera Längd</button>
+    <div id="tempConverter">
+        <app-temperature-converter />
+    </div>
+    <div id="lengthConverter">
+        <app-length-converter />
+    </div>
+</div>

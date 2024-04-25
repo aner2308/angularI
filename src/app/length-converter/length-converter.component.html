@@ -1,14 +1,20 @@
-<div>
-    <h2>Längdkonverterare</h2>
-    <label for="lengthInput">Längd:</label>
-    <input type="number" id="lengthInput" [(ngModel)]="inputValue">
-    <select [(ngModel)]="conversionDirection">
-        <option value="metersToFeet">Meter till Fot</option>
-        <option value="feetToMeters">Fot till Meter</option>
-    </select>
-    <button (click)="convert()">Konvertera</button>
-    <br>
-    <div id="result">
-        <p><strong>Resultat: </strong> {{result}}</p>
+<div id="lengthContainer">
+    <div class="pushRight">
+        <h2>Konvertera
+            <br>Längd
+        </h2>
+        <select [(ngModel)]="conversionDirection">
+            <option value="metersToFeet">Meter till Fot</option>
+            <option value="feetToMeters">Fot till Meter</option>
+        </select>
+        <br><br>
+        <label for="lengthInput">Längd:</label>
+        <input type="number" id="lengthInput" [(ngModel)]="inputValue">
+        <br><br>
+        <button (click)="convert()">Konvertera</button>
+        <br><br>
+        <div id="result">
+            <p><strong>Resultat: </strong> {{result}}</p>
+        </div>
     </div>
 </div>

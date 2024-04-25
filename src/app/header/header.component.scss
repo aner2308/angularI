@@ -1,20 +1,62 @@
 /* För att dölja menyn vid små skärmstorlekar */
+header {
+    height: 100px;
+}
+
+nav {
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    font-size: 2.4rem;
+    transition: .2s;
+
+    a {
+        text-decoration: none;
+        color: #4259a3;
+        font-weight: 700;
+    }
+
+
+}
+
+.logo:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
 .menu {
-    display: flex;
+    float: right;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.4rem;
+        width: 7em;
+        height: 1em;
+        padding: 10px 0px;
+        background-color: #4259a3;
+        border-radius: 0.3em;
+        margin: 5px;
+        color: white;
+        transition: .2s;
+    }
+
+    a:hover {
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+    }
 }
 
-a:link {
-    text-decoration: none;
-    color: #000;
-}
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin: 0 10px;
-}
 
 /* Stilar för hamburgermenyn */
 .menu-toggle {
@@ -32,6 +74,7 @@ li {
     width: 25px;
     border-radius: 3px;
     transition: all 0.3s ease;
+    margin-right: 20px
 }
 
 .hamburger:before {
@@ -43,7 +86,7 @@ li {
 }
 
 /* Stilar för att visa menyn vid större skärmstorlekar */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .menu {
         display: none;
     }

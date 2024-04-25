@@ -11,4 +11,27 @@ import { TemperatureConverterComponent } from '../temperature-converter/temperat
 })
 export class ConverterPageComponent {
 
+  convertTemp(): void {
+    const tempConverterEl: HTMLElement | null = document.getElementById("tempConverter");
+    const lengthConverterEl: HTMLElement | null = document.getElementById("lengthConverter");
+
+    if (tempConverterEl && lengthConverterEl) {
+      tempConverterEl.style.display = "block";
+      lengthConverterEl.style.display = "none";
+    } else {
+      console.log("Kunde inte hitta elementet")
+    }
+  }
+
+  convertLength(): void {
+    const tempConverterEl: HTMLElement | null = document.getElementById("tempConverter");
+    const lengthConverterEl: HTMLElement | null = document.getElementById("lengthConverter");
+
+    if (tempConverterEl && lengthConverterEl) {
+      tempConverterEl.style.display = "none";
+      lengthConverterEl.style.display = "block";
+    } else {
+      console.log("Kunde inte hitta elementet")
+    }
+  }
 }
